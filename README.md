@@ -1,6 +1,6 @@
 # Game of Words
 
-A text-based android game, where you have to type given words in a limited time. As the game progresses, the size of words increase.
+A text-based android game, where you have to type given words in a limited time. As the game progresses, size of the words increase.
 
 #### How the game works?
 * The player starts with 'Level-1'
