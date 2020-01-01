@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="@color/dark_primary"
+    android:padding="10sp">
+    <!--android:background="@color/light_blue_600"-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="backToMain"
+                android:text="Back"
+                android:textColor="@color/lighter_gray"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:text="0s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_timer"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/amber_500" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_scoreNo"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_outWord"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@android:color/white"
+                android:text="|word|" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="5">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_weight="4.5"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="26sp"
+                android:hint="Type Given Word"
+                android:textColor="@android:color/white"
+                android:id="@+id/et_inWord"
+                android:layout_marginLeft="10sp" />
+
+            <Button
+                android:text=">"
+                android:onClick="nextW"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:id="@+id/btn_Next"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:gravity="center_vertical|center_horizontal|center" />
+            <!--android:background="@color/light_blue_500"-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+    </LinearLayout>
+
+</LinearLayout>
